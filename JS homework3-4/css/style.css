@@ -1,0 +1,39 @@
+body {
+	background: lightgrey;
+}
+
+.container {
+	padding: 50px;
+	max-width: 960px;
+	background: #fff;
+	margin: 50px auto;
+}
+
+.h1 {
+	text-align: center;
+}
+
+legend {
+	border: none;
+	padding-bottom: 30px;
+}
+
+.submitDiv {
+	text-align: center;
+}
+
+label {
+	padding-left: 10px;
+}
+
+.custom-button {
+	margin-top: 30px;
+	height: 50px; 
+	width: 320px;
+	border: 1px solid #000;
+	background: #ABD5EB;
+}
+
+.custom-button:hover {
+	transform: scale(1.1);
+}

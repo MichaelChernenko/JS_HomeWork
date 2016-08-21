@@ -21,9 +21,11 @@ console.log("Степень:", degree);
 
 
 function pow(a, b) {
-	var result;
-
-	result = (a ** b);
+	var result = a;
+	
+	for ( var i = 1; i < b; i++) {
+		result *= a;
+	}
 	return result;
 }
 
