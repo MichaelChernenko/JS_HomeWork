@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.block {
+	width: 600px;
+	height: 500px;
+	margin: 50px auto;
+	border: 2px solid black;
+	border-radius: 8px;
+	background: #e8e8e8;
+}
+
+.menu {
+	height: 55px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 4px;
+	font-size: 16px;
+	margin: 10px;
+	padding: 5px 0 0 5px;
+	text-align: left;
+	background: #ccc;
+}
+
+.menu li {
+	display: inline;
+	margin-right: 5px; 
+}
+
+a {
+	display: inline-block;
+	padding: 0 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	background: rgb(246,246,246);
+	color: #151515;
+	font-weight: 500;
+	line-height: 45px;
+	border: 1px solid black;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-width: 0px;
+}
+
+.content {
+	width: 580px;
+	height: 300px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	border: 2px solid black;
+	border-radius: 4px;
+	background: #fff;
+	padding: 20px 30px;
+}
+
+.content li {
+	display: none;
+}
+
+.content li.active {
+	display: block;
+}
+
+.active {
+	display: block;
+}
+
+.newClassTabs {
+	background: rgb(204,204,204);
+}
+
+.newClassTabsCheck {
+	background: lightgrey;
+	color: #000;
+}

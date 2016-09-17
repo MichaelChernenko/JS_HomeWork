@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+.block {
+	width: 700px;
+	height: 400px;
+	margin: 50px auto;
+	padding: 50px;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 8px;
+	background: #e8e8e8;
+}
+form {
+	display: block;
+	width: 600px;
+	height: 200px;
+	margin: 0 auto;
+	background: #e8e8e8;
+	border: 2px solid #bbb;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px rgb(34, 34, 34);
+	margin-bottom: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.line {
+	position: relative;
+	margin: 5px 0 35px 5px;
+}
+label {
+	display: inline-block;
+	width: 5em;
+}
+input {
+	margin-right: 10px;
+}
+button {
+	width: 120px;
+	height: 40px;
+	font-size: 16px;
+}
+p {
+	display: inline-block;
+	position: absolute;
+	top: -50%;
+	width: 220px;
+	height: 50px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background: white;
+	box-shadow: 0 0 3px 2px rgb(108, 108, 108);
+	box-sizing: border-box;
+	padding: 5px;
+}
+form p {
+	display: none;
+}
