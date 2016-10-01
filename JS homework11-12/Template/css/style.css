@@ -1,0 +1,61 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eee;
+}
+
+.wrapper {
+	padding: 20px 50px 50px;
+	background: #fff;
+	margin: 0 auto;
+	max-width: 33%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+header {
+	text-align: center;
+}
+
+.info,
+.contacts,
+.feedback {
+	padding-left: 10px;
+}
+
+header p {
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin-top: 20px;
+}
+
+.info {
+	padding-bottom: 20px;
+}
+
+.info li {
+	margin-left: 60px;
+	width: 370px;
+}
+
+.info p,
+.contacts p,
+.feedback p {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+a {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.feedback span {
+	margin-right: 20px;
+}

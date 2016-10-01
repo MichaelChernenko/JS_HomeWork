@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+
+<script type="text/template" id="studentPage">
+		<div class="wrapper">
+			<header>
+				<h2><%= title %></h2>
+				<img src="<%= imageSourse %>" alt="">
+				<p><%= university %></p>
+			</header>
+			<hr>
+			<div class="info">
+				<p><%= objective %></p>
+				<ul>
+					<li><%= objectList.first %></li>
+					<li><%= objectList.second %></li>
+					<li><%= objectList.third %></li>
+				</ul>
+			</div>
+			<hr>
+			<div class="contacts">
+				<p><%= social.phone %></p>
+				<span><%= social.number %></span>
+				<p><%= social.profile %></p>
+				<a href="<%= social.link %>"><%= social.text %></a>
+			</div>
+			<hr>
+			<div class="feedback">
+				<p><%=feedback.heading %></p>
+				<span><%=feedback.text %></span>
+			</div>
+		</div>
+	</script>
+	
+</body>
+</html>
