@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	position: relative;
+	max-width: 1000px;
+	margin: 50px auto;
+}
+
+.jcarousel {
+	position: relative;
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
+}
+
+.jcarousel li {
+	float: left;
+	width: 320px;
+}
+
+.jcarousel ul {
+	width: 20000em;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jcarousel-prev,
+.jcarousel-next {
+	position: relative;
+	font-size: 30px;
+	top: -135px;
+	left: 15px;
+	width: 10px;
+	height: 10px;
+	background: black;
+	border-radius: 30px;
+	padding: 5px;
+	opacity: 0.5;
+	color: white;
+}
+
+.right {
+	position: relative;
+	top: -135px;
+	left: 895px;
+}
+
+.jcarousel-prev:hover,
+.jcarousel-next:hover {
+	opacity: 1;
+}
+
+.pagination-item {
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	color: #4E443C;
+	background: #fff;
+	border-radius: 20px;
+	line-height: 20px;
+	margin: 1px;
+}	
+
+.jcarousel-pagination {
+	display: inline-block;
+	margin: 0 44%;
+	width: 110px;
+	padding: 10px;
+	background: lightgrey;
+	border-radius: 10px;
+}
+
+.pagination-focus {
+	background: #4E443C;
+	color: #fff;
+}
+
+#options {
+	margin-top: 30px;
+	margin-left: 10px;
+}
+
+.niceCheck {
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url('img/checkbox-sprite.png');
+}
+.niceCheck input {
+	display: none;
+}
+
+.niceCheck label {
+	display: inline-block;
+	padding-left: 20px;
+	width: 100px;
+}
+
+input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.css label {
+	cursor: pointer;
+	margin-left: 5px;
+}
+.css label:before {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(img/checkbox-sprite.png);
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+}
+input[type=checkbox]:checked + label:before {
+	background-position: 0 -17px;
+}
+.css label:hover:after {
+	background-position: 0 -34px;
+}
+input[type=checkbox]:checked + label:hover:before {
+	background-position: 0 -51px;
+}
+
+label {
+	margin-left: 5px;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 20px;
+	width: 250px;
+	border: 1px solid black;
+}
+
+h2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style-ikSelect.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/jquery.jcarousel.js"></script>
+	<script src="js/jquery-color.js"></script>
+	<script src="js/script.js"></script>
+	<script src="https://use.fontawesome.com/81b25982d0.js"></script>
+	<script src="js/jquery.ikSelect.js"></script>
+	<script src="js/script_ikSelect_my.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="jcarousel">
+			<ul>
+				<li><img src="img/cat1.jpg" alt=""></li>
+				<li><img src="img/cat2.jpg" alt=""></li>
+				<li><img src="img/cat3.jpg" alt=""></li>
+				<li><img src="img/cat4.jpg" alt=""></li>
+				<li><img src="img/cat5.jpg" alt=""></li>
+			</ul>
+
+			<a href="#" class="jcarousel-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+			<a href="#" class="jcarousel-next right"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+
+		</div>
+
+		<div class="jcarousel-pagination">
+		</div>
+
+		<section id="options" class="section select-options select-line">
+			<select>
+				<optgroup label="Ukraine">
+					<option>Kiev</option>
+					<option>Kharkov</option>
+					<option>Lviv</option>
+					<option>Odessa</option>
+				</optgroup>
+				<optgroup label="USA">
+					<option>New York</option>
+					<option>Toronto</option>
+					<option>Sietl</option>
+					<option>Los Angeles</option>
+				</optgroup>
+			</select>
+		</section>
+
+		<div class="container">
+
+			<h2>JQuery</h2>
+
+			<form action="">
+				<div class="enable">
+					<span class="niceCheck">
+						<label for="ch1">Label 1</label>
+						<input type="checkbox" name id="ch1" />
+					</span>
+				</div>
+				<div class="checked">
+					<span class="niceCheck">
+						<label for="ch2">Label 2</label>
+						<input type="checkbox" name id="ch2" checked="checked" />
+					</span>
+				</div>
+			</form>
+
+			<h2>CSS</h2>
+
+			<form action="" class="css">
+				<div class="enable">
+					<input type="checkbox" id="test-check1" />
+					<label for="test-check1">Label 1</label>
+				</div>
+				<div class="checked">
+					<input type="checkbox" id="test-check2" checked="checked"/>
+					<label for="test-check2">Label 2</label>
+				</div>
+			</form>
+
+		</div>
+		
+	</div>
+</body>
+</html>	
