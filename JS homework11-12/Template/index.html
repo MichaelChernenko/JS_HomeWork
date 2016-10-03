@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<script type="text/template" id="studentPage">
+	<script type="text/template" id="studentPage">
 		<div class="wrapper">
 			<header>
 				<h2><%= title %></h2>
@@ -21,9 +21,9 @@
 			<div class="info">
 				<p><%= objective %></p>
 				<ul>
-					<li><%= objectList.first %></li>
-					<li><%= objectList.second %></li>
-					<li><%= objectList.third %></li>
+					<% for( var i = 0; i < objectList.length; i++) { %>
+					<li><%= objectList[i] %></li>
+					<% } %>
 				</ul>
 			</div>
 			<hr>
@@ -40,6 +40,6 @@
 			</div>
 		</div>
 	</script>
-	
+
 </body>
 </html>
