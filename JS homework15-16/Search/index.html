@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="logo">
+			<span class="logo--blue">П</span><span class="logo--red">о</span><span class="logo--yellow">о</span><span class="logo--blue">и</span><span class="logo--green">с</span><span class="logo--red">к</span>
+		</div>
+		<form action="">
+			<input type="text" class="search" id="search__input">
+			<input type="button" value="Пооиск" class="btn" id="search__button">
+		</form>
+		<script id="search__template" type="text/template">
+      <div class="search-item">
+        <a href="<%= item.link %>" target="_blank"><%= item.htmlTitle %></a><br>
+        <span class="search-item__uri"><%= item.htmlFormattedUrl %></span><br>
+        <span class="search-item__snippet"><%= item.htmlSnippet.replace(/\n/g, "").replace(/<br>/g, "") %></span>
+      </div>
+    </script>
+    <section id="search__result"></section>
+    <script>
+	</div>
+</body>
+</html>
