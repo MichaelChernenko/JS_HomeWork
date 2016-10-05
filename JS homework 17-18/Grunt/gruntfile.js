@@ -5,8 +5,8 @@ module.exports = function(grunt) {
     options: {
     },
     all: {
-      src: ["css/src/*.css"],
-      dest: "css/dest/style.main.css"
+      src: ["dev/css/*.css"],
+      dest: "css/style.main.css"
     },
   },
     concat: {
@@ -14,14 +14,14 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['js/src/*.js'],
-        dest: 'js/dib/script.main.js'
+        src: ['dev/js/*.js'],
+        dest: 'js/script.main.js'
       }
     },
     uglify: {
       dist: {
-        src: 'js/dib/script.main.js',
-        dest: 'js/dib/script.min.js'
+        src: 'js/script.main.js',
+        dest: 'js/script.min.js'
       }
     }
   });
