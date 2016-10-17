@@ -2,9 +2,9 @@
 'use strict';
 document.addEventListener('DOMContentLoaded', (function () {
 
-	var bodyPlace = document.getElementsByTagName('body');
-	var body = bodyPlace[0];
-
+	let bodyPlace = document.getElementsByTagName('body');
+let body = bodyPlace[0];
+body.classList.add('cssClass');
 	try {
 
 // вставить список
