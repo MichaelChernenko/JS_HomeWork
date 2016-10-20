@@ -1,0 +1,251 @@
+.services {
+	background: #2a2d32;
+	padding: 45px 0 60px 0;
+
+	h3 {
+		color: #fff;
+		font-size: 24px;
+		font-weight: 500;
+		font-family: $ubuntu-font;
+	}
+}
+
+.services-image {
+	margin-top: 55px;
+
+	li {
+		display: inline-block;
+		margin-right: 35px;
+
+		figure {
+			position: relative;
+
+			img {
+				width: 260px;
+				height: 260px;
+			}
+
+			figcaption {
+				margin-top: 30px;
+				text-align: center;
+				color: #fff;
+				font-size: 16px;
+				font-weight: 500;
+				font-family: $ubuntu-font;
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		figure:after {
+			display: none;
+			position: absolute;
+			content: '+';
+			font-size: 100px;
+			color: #fff;
+			text-align: center;
+			vertical-align: middle;
+			top: 0;
+			left: 0;
+			width: 260px;
+			height: 190px;
+			background: rgba(46,140,227,.9);
+			padding-top: 70px;
+			z-index: 5;
+		}
+
+		figure:hover:after {
+			display: block;
+		}
+
+		figure:hover figcaption {
+			color: #f4b60d;
+		}
+	}
+}
+
+.info {
+	overflow: hidden;
+	background: #f7f7f7;
+	padding-top: 60px;
+	padding-bottom: 80px;
+
+	h3 {
+		color: #2a2d32;
+		font-family: $ubuntu-font;
+		font-size: 24px;
+		font-weight: 500;
+		padding-bottom: 50px;
+	}
+}
+
+.info-news {
+	float: left;
+	position: relative;
+	width: 550px;
+}
+
+.news-list {
+	li {
+		margin-left: 180px;
+
+		.news-list_data {
+			margin-top: 15px;
+			position: absolute;
+			left: -20px;
+			width: 40px;
+			height: 60px;
+
+			.month {
+				text-align: center;
+				height: 50%;
+				background-color: #248cec;
+				color: white;
+				font-family: $ubuntu-font;
+				font-size: 15px;
+				font-weight: 500;
+				line-height: 30px;
+			}
+
+			.day {
+				color: #2a2b2e;
+				font-family: $ubuntu-font;
+				font-size: 18px;
+				font-weight: 500;
+				line-height: 30px;
+				text-align: center;
+				height: 50%;
+				background-color: #f4b60d;
+			}
+		}
+
+		h4 {
+			color: #000;
+			font-family: $ubuntu-font;
+			font-size: 16px;
+			font-weight: 500;
+			padding-bottom: 10px;
+
+			&:hover {
+				color: #248cec;
+			}
+		}
+
+		.news-list_preheader {
+			padding-bottom: 25px;
+		}
+
+		.news-list_text {
+			font-family: Arial;
+			font-size: 13px;
+			font-weight: 400;
+			color: #9d9d9d;
+			padding-bottom: 35px;
+			line-height: 20px;
+		}
+
+		.news-list_text--blue {
+			color: #0187f4;
+		}
+
+		&:before {
+			position: absolute;
+			content: '';
+			background: url('../img/news1.png');
+			width: 150px;
+			height: 150px;
+			left: 0;
+		}
+
+		&:last-child:before {
+			background: url('../img/news2.png');
+		}
+	}
+}
+
+.info-banner {
+	float: right;
+}
+
+.accordion {
+	margin-left: 35px;
+	display: block;
+	position: relative;
+	background-color: white;
+	box-sizing: border-box;
+	border: 1px solid #e8e8e8;
+	color: #444;
+	cursor: pointer;
+	padding: 10px;
+	width: 540px;
+	text-align: left;
+	outline: none;
+	transition: 0.4s;
+	font-family: "ubuntu", Arial;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 5px; 
+	&:before {
+		position: absolute;
+		content: '+';
+		background: #fff;
+		left: -40px;
+		width: 35px;
+		height: 35px;
+		top: 0;
+		text-align: center;
+		line-height: 35px;
+		transition: 0.4s; 
+		&.active,
+		&.active:before,
+		&:hover,
+		&:hover:before {
+			background-color: #f4b60d; 
+		}
+
+		&.active:before {
+			content: '-'; 
+		}
+	}
+}
+
+
+.panel {
+	width: 540px;
+	padding: 0 18px;
+	color: #8a8a8a;
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: 400;
+	overflow: auto;
+	padding-right: 0; 
+
+	p {
+		width: 540px;
+		padding-top: 35px;
+		padding-bottom: 45px; 
+	}
+}
+
+.ui-state-active {
+	background-color: #f4b60d;
+	&:before {
+		content: '-'; 
+		background-color: #f4b60d;
+	}
+}
+
+.company {
+	padding: 80px 0;
+}
+
+.company-list {
+	li {
+		display: inline-block;
+		margin-right: 40px;
+	}
+}
+
