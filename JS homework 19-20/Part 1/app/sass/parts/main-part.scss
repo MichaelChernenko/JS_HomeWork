@@ -183,12 +183,11 @@
 	text-align: left;
 	outline: none;
 	transition: 0.4s;
-	font-family: $ubuntu-font;
+	font-family: "ubuntu", Arial;
 	font-size: 12px;
 	font-weight: 700;
 	text-transform: uppercase;
-	margin-bottom: 5px;
-
+	margin-bottom: 5px; 
 	&:before {
 		position: absolute;
 		content: '+';
@@ -199,42 +198,44 @@
 		top: 0;
 		text-align: center;
 		line-height: 35px;
-		transition: 0.4s;
+		transition: 0.4s; 
+		&.active,
+		&.active:before,
+		&:hover,
+		&:hover:before {
+			background-color: #f4b60d; 
+		}
+
+		&.active:before {
+			content: '-'; 
+		}
 	}
 }
 
-.accordion.active, 
-.accordion.active:before,
-.accordion:hover,
-.accordion:hover:before{
-	background-color: #f4b60d;
-}
-
-.accordion.active:before {
-	content: '-';
-}
 
 .panel {
-	width: 535px;
+	width: 540px;
 	padding: 0 18px;
-	max-height: 0;
 	color: #8a8a8a;
 	font-family: Arial;
 	font-size: 13px;
 	font-weight: 400;
-	transition: 0.6s ease-in-out;
-	opacity: 0;
-	overflow: hidden;
+	overflow: auto;
+	padding-right: 0; 
 
 	p {
-		padding-top: 25px;
-		padding-bottom: 40px;
+		width: 540px;
+		padding-top: 35px;
+		padding-bottom: 45px; 
 	}
 }
 
-.panel.show {
-	opacity: 1;
-	max-height: 100%;
+.ui-state-active {
+	background-color: #f4b60d;
+	&:before {
+		content: '-'; 
+		background-color: #f4b60d;
+	}
 }
 
 .company {

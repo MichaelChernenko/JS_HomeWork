@@ -1,12 +1,12 @@
 
 'use strict';
-document.addEventListener('DOMContentLoaded', (function () {
+document.addEventListener('DOMContentLoaded', ( () => {
 
-  let bodyPlace = document.getElementsByTagName('body');
-  let body = bodyPlace[0];
-  body.classList.add('cssClass');
+let bodyPlace = document.getElementsByTagName('body');
+let body = bodyPlace[0];
+body.classList.add('cssClass');
 
-  try {
+try {
 
 // вставить список
   let shablon = document.getElementById('make_form').innerHTML;
@@ -24,20 +24,20 @@ document.addEventListener('DOMContentLoaded', (function () {
   body.innerHTML += modulForm;
 
 // проверка результата
-  function checkResult(e) {
+  let checkResult = (e) => {
       e.preventDefault();
       let i = 0,
       j = 0,
       boxFind = '',
       userCheck = '',
       userProgress = 'right';
-        myTest.quesstions.forEach(function () {
+        myTest.quesstions.forEach( () => {
           userCheck = '';
           i++;
           j = 0;
-          myTest.answers['answers_' + i].forEach ( function () {
+          myTest.answers[`answers_${i}`].forEach ( () => {
             j++;
-            boxFind = document.getElementById( 'line' + i + j );
+            boxFind = document.getElementById( `line${i}${j}`);
             userCheck += (boxFind.checked) ? 1 : 0;
           });
           myTest.user_answer[i-1] = userCheck;
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (function () {
 
   //  модальное окно
 
-    function hideModul() {
+    let hideModul = () => {
       document.getElementById('cover-div').style.display = 'none';
     };
 
@@ -58,12 +58,12 @@ document.addEventListener('DOMContentLoaded', (function () {
     let form = document.getElementById('prompt-form');
     document.getElementById('prompt-message').innerHTML = `Your answers are ${userProgress}`;
 
-    form.onsubmit = function() {
+    form.onsubmit = () => {
       hideModul();
       return false;
     };
 
-    form.elements.restart.onclick = function() {
+    form.elements.restart.onclick = () => {
       let inputBoxes = document.querySelectorAll( 'input[type="checkbox"]' );
       for (let boxForUncheck of inputBoxes){
 
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', (function () {
       hideModul();
     };
 
-    document.onkeydown = function(e) {        // escape
+    document.onkeydown = (e) => {        // escape
       if (e.keyCode == 27) {
         hideModul();
       }
@@ -87,8 +87,8 @@ document.addEventListener('DOMContentLoaded', (function () {
 
 document.getElementById('submit-form').addEventListener('click', checkResult);
 
-
-} catch (e) {
+}
+catch (e)  {
 
   alert(`Error. Please, restart page.', ${e}`);
 
@@ -119,9 +119,9 @@ document.getElementById('submit-form').addEventListener('click', checkResult);
       };
 
       let obj = JSON.stringify(myTest);
-  localStorage.setItem('test_module', obj);
+      localStorage.setItem('test_module', obj);
 
-} finally {
+    } finally {
   // window.localStorage.clear();
 };
 

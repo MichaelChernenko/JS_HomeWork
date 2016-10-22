@@ -10,6 +10,21 @@ document.addEventListener('DOMContentLoaded', function () {
   try {
     (function () {
 
+      // вставить список
+      var shablon = document.getElementById('make_form').innerHTML;
+      var obj = localStorage.getItem('test_module');
+      var myTest = JSON.parse(obj);
+
+      var tmpl = _.template(shablon);
+      var testForm = tmpl(myTest);
+      body.innerHTML += testForm;
+
+      // добавить модальное окно
+      var modulShablon = document.getElementById('make_modal').innerHTML;
+      var modulFormFunc = _.template(modulShablon);
+      var modulForm = modulFormFunc();
+      body.innerHTML += modulForm;
+
       // проверка результата
       var checkResult = function checkResult(e) {
         e.preventDefault();
@@ -37,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         //  модальное окно
 
-        function hideModul() {
+        var hideModul = function hideModul() {
           document.getElementById('cover-div').style.display = 'none';
         };
 
@@ -93,21 +108,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         //  конец  модального окна
       };
-
-      // вставить список
-      var shablon = document.getElementById('make_form').innerHTML;
-      var obj = localStorage.getItem('test_module');
-      var myTest = JSON.parse(obj);
-
-      var tmpl = _.template(shablon);
-      var testForm = tmpl(myTest);
-      body.innerHTML += testForm;
-
-      // добавить модальное окно
-      var modulShablon = document.getElementById('make_modal').innerHTML;
-      var modulFormFunc = _.template(modulShablon);
-      var modulForm = modulFormFunc();
-      body.innerHTML += modulForm;;
 
       document.getElementById('submit-form').addEventListener('click', checkResult);
     })();

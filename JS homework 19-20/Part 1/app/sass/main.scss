@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'ubuntu';
-  src: url("../../fonts/ubuntu_allfont.ru-webfont.eot");
-  src: url("../../fonts/ubuntu_allfont.ru-webfont.eot?#iefix") format("embedded-opentype"), url("../../fonts/ubuntu_allfont.ru-webfont.woff2") format("woff2"), url("../../fonts/ubuntu_allfont.ru-webfont.woff") format("woff"), url("../../fonts/ubuntu_allfont.ru-webfont.ttf") format("truetype");
+  src: url("../fonts/ubuntu_allfont.ru-webfont.eot");
+  src: url("../fonts/ubuntu_allfont.ru-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu_allfont.ru-webfont.woff2") format("woff2"), url("../fonts/ubuntu_allfont.ru-webfont.woff") format("woff"), url("../fonts/ubuntu_allfont.ru-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
-$ubuntu-font: ubuntu, Arial;
+$ubuntu-font: 'ubuntu', Arial;
 
 .wrapper {
 	width: 1160px;

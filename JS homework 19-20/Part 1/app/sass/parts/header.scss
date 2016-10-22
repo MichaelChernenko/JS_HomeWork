@@ -20,10 +20,22 @@ header {
 
 			i {
 				margin-left: 16px;
-
-				&:hover {
-					color: #248cec;
 				}
+				
+				.facebook-icon:hover {
+					color: #375696;
+				}
+				.twitter-icon:hover {
+					color: #248cec;
+			}
+			.rss-icon:hover {
+				color: #F68219;
+			}
+			.linkedin-icon:hover {
+				color: #0071B1;
+			}
+			.skype-icon:hover {
+				color: #02AEF0;
 			}
 		}
 	}
